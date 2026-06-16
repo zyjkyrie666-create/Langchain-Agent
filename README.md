@@ -1,6 +1,6 @@
 # LangChain ReAct Agent 扫地机器人案例模板
 
-这是一个基于 **LangChain + LangGraph ReAct Agent + RAG** 的智能客服示例项目，当前案例已经替换为「扫地机器人 / 扫拖一体机器人」场景。
+这是一个基于 **LangChain + LangGraph ReAct Agent + RAG** 的智能客服示例项目。
 
 项目架构保持原项目不变，仍然保留：
 
