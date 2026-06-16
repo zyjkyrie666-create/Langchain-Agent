@@ -2,7 +2,6 @@
 
 这是一个基于 **LangChain + LangGraph ReAct Agent + RAG** 的智能客服示例项目，当前业务案例为「新能源汽车客服 / 用车顾问 / 车辆使用报告」。
 
-项目架构保持原项目不变，仍然保留：
 
 - `agent/`：ReAct Agent 主流程和工具调用
 - `rag/`：知识库加载、向量检索、RAG 总结
@@ -130,7 +129,7 @@ http://localhost:8501
 
 ## 案例说明
 
-这版模板没有改变底层 Agent 和 RAG 架构，只替换业务内容：
+业务内容：
 
 - `prompts/main_prompt.txt`：定义新能源汽车客服的工具使用规则。
 - `prompts/report_prompt.txt`：定义车辆使用报告生成格式。
