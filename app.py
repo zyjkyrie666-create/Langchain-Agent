@@ -1,9 +1,9 @@
 import streamlit as st
 from agent.react_agent import ReactAgent
 
-st.set_page_config(page_title="清洁管家 Agent", page_icon="🤖")
-st.title("清洁管家 Agent")
-st.caption("扫地机器人客服 / 导购 / 使用报告助手，基于 LangChain ReAct Agent + RAG 检索增强")
+st.set_page_config(page_title="新能源车服 Agent", page_icon="🚗")
+st.title("新能源车服 Agent")
+st.caption("新能源汽车客服 / 用车顾问 / 车辆报告助手，基于 LangChain ReAct Agent + RAG 检索增强")
 st.divider()
 
 if "agent" not in st.session_state:
@@ -22,7 +22,7 @@ if prompt:
     st.session_state["messages"].append({"role": "user", "content": prompt})
 
     response_messages: list[str] = []
-    with st.spinner("清洁管家正在分析问题..."):
+    with st.spinner("新能源车服助手正在分析问题..."):
         res_stream = st.session_state["agent"].execute_stream(prompt)
 
         def stream_generator(generator, cache_list):
